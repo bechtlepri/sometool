@@ -24,6 +24,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+        
+    - name: Cache node modules
+      uses: actions/cache@v2
+      with: 
+        path: |
+          **/node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+     
     - run: npm ci
     - run: npm run build --if-present
     #- run: npm test
