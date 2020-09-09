@@ -30,7 +30,8 @@ jobs:
       with: 
         path: |
           **/node_modules
-        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+          **/package-lock.json
+        key: ${{ runner.os }}-${{ matrix.node-version }}
      
     - run: npm ci
     - run: npm run build --if-present
