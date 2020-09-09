@@ -1,0 +1,1 @@
+echo "This is some tool, just inited"
