@@ -1,0 +1,3 @@
+[submodule "docs2"]
+	path = docs2
+	url = https://github.com/bechtlepri/sometool-docs
