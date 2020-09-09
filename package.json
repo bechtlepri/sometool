@@ -1,0 +1,28 @@
+{
+  "name": "sometool",
+  "version": "1.0.0",
+  "description": "some tool to test github actions cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bechtlepri/sometool.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "pascal.ried@bechtle.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bechtlepri/sometool/issues"
+  },
+  "homepage": "https://github.com/bechtlepri/sometool#readme",
+  "dependencies": {
+    "eslint": "^7.8.1",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
+    "papaparse": "^5.3.0"
+  }
+}
