@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
-    - run: ls && ls node_modules
+    - run: ls
         
     - name: Cache node modules
       uses: actions/cache@v2
