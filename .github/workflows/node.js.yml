@@ -25,6 +25,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
+    - run: ls && ls node_modules
+        
     - name: Cache node modules
       uses: actions/cache@v2
       with:
@@ -34,7 +36,7 @@ jobs:
         key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-${{ matrix.node-version }}
-     
+    - run: ls && ls node_modules
     - run: npm install
     #- run: npm run build --if-present
     #- run: npm test
