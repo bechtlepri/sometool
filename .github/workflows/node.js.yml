@@ -32,7 +32,7 @@ jobs:
       with:
         path: |
           ~/.npm
-          ./node-modules
+          ./node_modules
         key: ${{ runner.os }}-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-${{ matrix.node-version }}
